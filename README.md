@@ -56,6 +56,6 @@ Les scripts nécessitent les bibliothèques Python suivantes :
 pandas : Pour manipuler et analyser les données.
 matplotlib : Pour générer les visualisations.
 Installation des dépendances :
-Assurez-vous d’avoir Python 3.x installé, puis utilisez la commande suivante pour installer les bibliothèques nécessaires :
+Assurez-vous d’avoir Python 3.13.0 installé, puis utilisez la commande suivante pour installer les bibliothèques nécessaires :
 
 pip install pandas matplotlib
