@@ -1,0 +1,30 @@
+Date,Type_Incident,Lieu,Gravité
+2023-01-15,Cyberattaque,Paris,Moyenne
+2023-02-20,Vol de données,Lyon,Élevée
+2023-03-12,Cyberattaque,Marseille,Basse
+2023-03-25,Intrusion physique,Paris,Moyenne
+2023-04-05,Cyberattaque,Toulouse,Élevée
+2023-04-15,Vol de données,Nantes,Moyenne
+2023-05-10,Cyberattaque,Lyon,Basse
+2023-05-18,Intrusion physique,Bordeaux,Élevée
+2023-06-01,Cyberattaque,Paris,Moyenne
+2023-06-20,Vol de données,Toulouse,Élevée
+2023-07-15,Cyberattaque,Marseille,Basse
+2023-07-28,Intrusion physique,Nice,Moyenne
+2023-08-02,Vol de données,Lille,Élevée
+2023-08-15,Cyberattaque,Strasbourg,Moyenne
+2023-09-05,Intrusion physique,Paris,Basse
+2023-09-12,Vol de données,Nancy,Élevée
+2023-10-01,Cyberattaque,Marseille,Moyenne
+2023-10-15,Vol de données,Toulouse,Élevée
+2023-11-10,Intrusion physique,Bordeaux,Basse
+2023-11-20,Cyberattaque,Nantes,Moyenne
+2023-12-01,Cyberattaque,Paris,Élevée
+2023-12-15,Vol de données,Nice,Moyenne
+2024-01-05,Cyberattaque,Lyon,Basse
+2024-01-15,Intrusion physique,Paris,Élevée
+2024-02-10,Vol de données,Marseille,Moyenne
+2024-02-25,Cyberattaque,Toulouse,Basse
+2024-03-10,Cyberattaque,Strasbourg,Moyenne
+2024-03-15,Vol de données,Lyon,Élevée
+2024-04-01,Intrusion physique,Bordeaux,Moyenne
