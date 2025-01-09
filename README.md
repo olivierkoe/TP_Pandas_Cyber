@@ -22,3 +22,26 @@ timestamp,ip_address,status
 2025-01-05 12:35:05,192.168.1.11,failed
 2025-01-05 12:35:10,192.168.1.11,failed
 2025-01-05 12:36:00,192.168.1.12,success
+
+
+### Analyse des logs avec Python
+Le script Python repose sur la bibliothèque pandas pour effectuer les opérations suivantes :
+
+Charger le fichier CSV contenant les logs.
+Filtrer les lignes ayant le statut "failed".
+Compter le nombre de tentatives échouées par adresse IP.
+Identifier les adresses IP ayant plus de 2 tentatives échouées.
+Afficher la liste des adresses IP suspectes avec leur nombre de tentatives échouées.
+
+## Prérequis
+Bibliothèques Python nécessaires
+pandas : Pour manipuler et analyser les données.
+Installation des dépendances
+Assurez-vous d’avoir Python installé, puis utilisez pip pour installer pandas :
+
+pip install pandas
+
+
+## Fichiers inclus
+logs.csv : Exemple de fichier de logs.
+analyze_logs.py : Script Python pour analyser les logs.
