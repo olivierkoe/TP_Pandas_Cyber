@@ -9,6 +9,7 @@ Ce projet vise à analyser des fichiers de logs pour détecter les adresses IP s
 ## Contenu du projet
 
 ### 1. Charger les données de logs
+
 Nous utilisons un fichier CSV contenant les informations suivantes :
 - **timestamp** : Date et heure de la tentative de connexion.
 - **ip_address** : Adresse IP de l’utilisateur.
@@ -22,9 +23,11 @@ timestamp,ip_address,status
 2025-01-05 12:35:05,192.168.1.11,failed
 2025-01-05 12:35:10,192.168.1.11,failed
 2025-01-05 12:36:00,192.168.1.12,success
+```
+---
 
+## Analyse des logs avec Python
 
-### Analyse des logs avec Python
 Le script Python repose sur la bibliothèque pandas pour effectuer les opérations suivantes :
 
 Charger le fichier CSV contenant les logs.
