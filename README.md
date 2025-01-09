@@ -1,50 +1,61 @@
-# TP_Pandas_Cyber
-## Détection de Tentatives de Connexion Échouées
+# TPs Python/Pandas pour la Cybersécurité
 
-### Objectif
-Ce projet vise à analyser des fichiers de logs pour détecter les adresses IP suspectes ayant un nombre élevé de tentatives de connexion échouées. Cela permet d’identifier des activités potentiellement malveillantes et d’améliorer la sécurité informatique.
+Ce projet regroupe deux TPs axés sur l'analyse et la visualisation de données liées à la cybersécurité. Les scripts utilisent Python et Pandas pour traiter des fichiers CSV et fournir des analyses claires et exploitables.
 
 ---
 
-## Contenu du projet
+## Contenu des TPs
 
-### 1. Charger les données de logs
+### TP01 : Détection de Tentatives de Connexion Échouées
+**Description** :  
+Ce TP analyse des logs de connexions pour identifier les adresses IP suspectes ayant effectué un grand nombre de tentatives échouées.  
+**Objectifs** :
+1. Charger un fichier de logs CSV contenant des informations de connexion.
+2. Filtrer les tentatives échouées.
+3. Compter les tentatives échouées par adresse IP.
+4. Identifier et afficher les IP avec plus de 2 échecs.
 
-Nous utilisons un fichier CSV contenant les informations suivantes :
-- **timestamp** : Date et heure de la tentative de connexion.
-- **ip_address** : Adresse IP de l’utilisateur.
-- **status** : Statut de la tentative (succès ou échec).
-
-#### Exemple de fichier `logs.csv`
+**Fichier à analyser** : `logs.csv`  
+Structure du fichier :  
 ```csv
 timestamp,ip_address,status
 2025-01-05 12:34:56,192.168.1.10,success
 2025-01-05 12:35:01,192.168.1.11,failed
-2025-01-05 12:35:05,192.168.1.11,failed
-2025-01-05 12:35:10,192.168.1.11,failed
-2025-01-05 12:36:00,192.168.1.12,success
-```
----
+```	
+## Commande pour lancer le TP01
 
-## Analyse des logs avec Python
+ python .\chargementDonnees.py
 
-Le script Python repose sur la bibliothèque pandas pour effectuer les opérations suivantes :
 
-Charger le fichier CSV contenant les logs.
-Filtrer les lignes ayant le statut "failed".
-Compter le nombre de tentatives échouées par adresse IP.
-Identifier les adresses IP ayant plus de 2 tentatives échouées.
-Afficher la liste des adresses IP suspectes avec leur nombre de tentatives échouées.
+### TP02 : Analyse des Logs de Connexions
 
-## Prérequis
-Bibliothèques Python nécessaires
+**Description :**
+Ce TP analyse et visualise des incidents de cybersécurité enregistrés dans un fichier CSV pour en comprendre la fréquence et l’évolution dans le temps.
+**Objectifs** :
+
+1. harger un fichier d’incidents CSV.
+2. Nettoyer les données en gérant les valeurs manquantes.
+3. Effectuer des analyses (par type, date et lieu).
+4. Visualiser les résultats (diagrammes en barres, courbes d'évolution).
+
+**Fichier à analyser** : `incidents.csv`
+Structure du fichier :
+```csv
+Date,Type_Incident,Lieu,Gravité
+2023-01-15,Cyberattaque,Paris,Moyenne
+2023-02-20,Vol de données,Lyon,Élevée
+```	
+
+## Commande pour lancer le TP02
+
+python .\analyseDonnees.py
+
+### Dépendances nécessaires ###
+Les scripts nécessitent les bibliothèques Python suivantes :
+
 pandas : Pour manipuler et analyser les données.
-Installation des dépendances
-Assurez-vous d’avoir Python installé, puis utilisez pip pour installer pandas :
+matplotlib : Pour générer les visualisations.
+Installation des dépendances :
+Assurez-vous d’avoir Python 3.x installé, puis utilisez la commande suivante pour installer les bibliothèques nécessaires :
 
-pip install pandas
-
-
-## Fichiers inclus
-logs.csv : Exemple de fichier de logs.
-analyze_logs.py : Script Python pour analyser les logs.
+pip install pandas matplotlib
